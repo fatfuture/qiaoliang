@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>表格页面</title>
+  <style>
+    table
+    {
+      border-collapse:collapse;
+    }
+    table,th, td
+    {
+      border: 1px solid black;
+      height:20px
+
+    }
+    .fu>tr>td{
+      border: none;
+    }
+    input{
+      border: none;
+    }
+  </style>
+
+</head>
+<body>
+<form action="http://localhost:8080/qiaoliang/updateForm2Servlet" method="post" style="text-align: center;margin-left: 249px;margin-top: 100px" >
+  <table border="1" width="900px" height="600px" style="border: 0;margin-bottom: -10px;" class="fu">
+    <caption>城市桥梁日常巡检报表</caption>
+    <tr>
+      <td style="border: none;">
+        <table border="1" width="900px" height="600px" style="border: 0;margin-bottom: -2px;" ><tr>
+          <td width="220px">桥梁名称（编号）</td>
+          <td width="220px"><input type="text"  size="28px" name="qiaoliangmingcheng"></div></td>
+          <td width="220px">巡检单位</td>
+          <td width="220px"><input type="text"  size="28px" name="xunjiandanwei"></div></td>
+        </tr></table>
+      </td>
+    </tr>
+    <tr>
+      <td style="border: none;"><table border="1" width="900px" height="600px" style="border: 0;margin-bottom: -2px;"> <tr>
+        <td width="147">检查项</td>
+        <td width="147">完好</td>
+        <td width="147">损坏类型</td>
+        <td width="147">损坏程度（数量）</td>
+        <td width="147">损坏位置</td>
+        <td width="147">备注</td></tr></table></td>
+
+    </tr>
+    <tr>
+      <td style="border: none;"><table border="1" width="900px" height="600px" style="border: 0;margin-bottom: -2px;"> <tr>
+        <td width="147">桥名牌</td>
+        <td width="147"><input type="radio" name="qiaomingpai_shi" value="yes">是
+          <input type="radio" name="qiaomingpai_fou" value="no">否</td>
+        <td width="147"><input type="text"  size="16px" name="qiaomingpai_sunhuaileixing"></div></td>
+        <td width="147"><input type="text"  size="16px" name="qiaomingpai_sunhuaichengdu"></div></td>
+        <td width="147"><input type="text"  size="16px" name="qiaomingpai_sunhuaiweizhi"></div></td>
+        <td width="147"><input type="text"  size="16px" name="qiaomingpai_beizhu"></div></td>
+      </tr></table></td>
+    </tr>
+    <tr>
+      <td style="border: none;"><table border="1" width="900px" height="600px" style="border: 0;margin-bottom: -2px;"> <tr>
+        <td width="147">限高牌、限载牌</td>
+        <td width="147"><input type="radio" name="xiangaopaixianzaipai_shi" value="yes">是
+          <input type="radio" name="xiangaopaixianzaipai_fou" value="no">否</td>
+        <td width="147"><input type="text"  size="16px" name="xiangaopaixianzaipai_sunhuaileixing"></div></td>
+        <td width="147"><input type="text"  size="16px" name="xiangaopaixianzaipai_sunhuaichengdu"></div></td>
+        <td width="147"><input type="text"  size="16px" name="xiangaopaixianzaipai_sunhuaiweizhi"></div></td>
+        <td width="147"><input type="text"  size="16px" name="xiangaopaixianzaipai_beizhu"></div></td>
+      </tr></table></td>
+    </tr>
+    <tr>
+      <td style="border: none;"><table border="1" width="900px" height="600px" style="border: 0;margin-bottom: -2px;"> <tr>
+        <td width="147">车行道</td>
+        <td width="147"><input type="radio" name="chexingdao_shi" value="yes">是
+          <input type="radio" name="chexingdao_fou" value="no">否</td>
+        <td width="147"><input type="text"  size="16px" name="chexingdao_sunhuaileixing"></div></td>
+        <td width="147"><input type="text"  size="16px" name="chexingdao_sunhuaichengdu"></div></td>
+        <td width="147"><input type="text"  size="16px" name="chexingdao_sunhuaiweizhi"></div></td>
+        <td width="147"><input type="text"  size="16px" name="chexingdao_beizhu"></div></td>
+      </tr></table></td>
+    </tr>
+    <tr>
+      <td style="border: none;"><table border="1" width="900px" height="600px" style="border: 0;margin-bottom: -2px;"> <tr>
+        <td width="147">人行道</td>
+        <td width="147"><input type="radio" name="renxingdao_shi" value="yes">是
+          <input type="radio" name="renxingdao_fou" value="no">否</td>
+        <td width="147"><input type="text"  size="16px" name="renxingdao_test1"></div></td>
+        <td width="147"><input type="text"  size="16px" name="renxingdao_test2"></div></td>
+        <td width="147"><input type="text"  size="16px" name="renxingdao_test3"></div></td>
+        <td width="147"><input type="text"  size="16px" name="renxingdao_test4"></div></td>
+      </tr></table></td>
+    </tr>
+    <tr>
+      <td style="border: none;"><table border="1" width="900px" height="600px" style="border: 0;margin-bottom: -2px;"> <tr>
+        <td width="147">伸缩缝</td>
+        <td width="147"><input type="radio" name="shensuofeng_shi" value="yes">是
+          <input type="radio" name="shensuofeng_fou" value="no">否</td>
+        <td width="147"><input type="text"  size="16px" name="shensuofeng_test1"></div></td>
+        <td width="147"><input type="text"  size="16px" name="shensuofeng_test2"></div></td>
+        <td width="147"><input type="text"  size="16px" name="shensuofeng_test3"></div></td>
+        <td width="147"><input type="text"  size="16px" name="shensuofeng_test4"></div></td>
+      </tr></table></td>
+    </tr>
+    <tr>
+      <td style="border: none;"><table border="1" width="900px" height="600px" style="border: 0;margin-bottom: -2px;"> <tr>
+        <td width="147">栏杆</td>
+        <td width="147"><input type="radio" name="langan_shi" value="yes">是
+          <input type="radio" name="langan_fou" value="no">否</td>
+        <td width="147"><input type="text"  size="16px" name="langan_test1"></div></td>
+        <td width="147"><input type="text"  size="16px" name="langan_test2"></div></td>
+        <td width="147"><input type="text"  size="16px" name="langan_test3"></div></td>
+        <td width="147"><input type="text"  size="16px" name="langan_test4"></div></td>
+      </tr></table></td>
+    </tr>
+    <tr>
+      <td style="border: none;"><table border="1" width="900px" height="600px" style="border: 0;margin-bottom: -2px;"> <tr>
+        <td width="147">排水设施</td>
+        <td width="147"><input type="radio" name="paishuisheshi_shi" value="yes">是
+          <input type="radio" name="paishuisheshi_fou" value="no">否</td>
+        <td width="147"><input type="text"  size="16px" name="paishuisheshi_test1"></div></td>
+        <td width="147"><input type="text"  size="16px" name="paishuisheshi_test2"></div></td>
+        <td width="147"><input type="text"  size="16px" name="paishuisheshi_test3"></div></td>
+        <td width="147"><input type="text"  size="16px" name="paishuisheshi_test4"></div></td>
+      </tr></table></td>
+    </tr>
+    <tr>
+      <td style="border: none;"><table border="1" width="900px" height="600px" style="border: 0;margin-bottom: -2px;"> <tr>
+        <td width="147">桥路连接位置</td>
+        <td width="147"><input type="radio" name="qiaolulianjieweizhi_shi" value="yes">是
+          <input type="radio" name="qiaolulianjieweizhi_fou" value="no">否</td>
+        <td width="147"><input type="text"  size="16px" name="qiaolulianjieweizhi_test1"></div></td>
+        <td width="147"><input type="text"  size="16px" name="qiaolulianjieweizhi_test2"></div></td>
+        <td width="147"><input type="text"  size="16px" name="qiaolulianjieweizhi_test3"></div></td>
+        <td width="147"><input type="text"  size="16px" name="qiaolulianjieweizhi_test4"></div></td>
+      </tr></table></td>
+    </tr>
+    <tr>
+      <td style="border: none;"><table border="1" width="900px" height="600px" style="border: 0;margin-bottom: -2px;"> <tr>
+        <td width="147">上部结构</td>
+        <td width="147"><input type="radio" name="shangbujiegou_shi" value="yes">是
+          <input type="radio" name="shangbujiegou_fou" value="no">否</td>
+        <td width="147"><input type="text"  size="16px" name="shangbujiegou_test1"></div></td>
+        <td width="147"><input type="text"  size="16px" name="shangbujiegou_test2"></div></td>
+        <td width="147"><input type="text"  size="16px" name="shangbujiegou_test3"></div></td>
+        <td width="147"><input type="text"  size="16px" name="shangbujiegou_test4"></div></td>
+      </tr></table></td>
+    </tr>
+    <tr>
+      <td style="border: none;"><table border="1" width="900px" height="600px" style="border: 0;margin-bottom: -2px;"> <tr>
+        <td width="147">支座</td>
+        <td width="147"><input type="radio" name="zhizuo_shi" value="yes">是
+          <input type="radio" name="zhizuo_fou" value="no">否</td>
+        <td width="147"><input type="text"  size="16px" name="zhizuo_test1"></div></td>
+        <td width="147"><input type="text"  size="16px" name="zhizuo_test2"></div></td>
+        <td width="147"><input type="text"  size="16px" name="zhizuo_test3"></div></td>
+        <td width="147"><input type="text"  size="16px" name="zhizuo_test4"></div></td>
+      </tr></table></td>
+    </tr>
+    <tr>
+      <td style="border: none;"><table border="1" width="900px" height="600px" style="border: 0;margin-bottom: -2px;"> <tr>
+        <td width="147">下部结构</td>
+        <td width="147"><input type="radio" name="xiabujiegou_shi" value="yes">是
+          <input type="radio" name="xiabujiegou_fou" value="no">否</td>
+        <td width="147"><input type="text"  size="16px" name="xiabujiegou_test1"></div></td>
+        <td width="147"><input type="text"  size="16px" name="xiabujiegou_test2"></div></td>
+        <td width="147"><input type="text"  size="16px" name="xiabujiegou_test3"></div></td>
+        <td width="147"><input type="text"  size="16px" name="xiabujiegou_test4"></div></td>
+      </tr></table></td>
+    </tr>
+    <tr>
+      <td style="border: none;"><table border="1" width="900px" height="600px" style="border: 0;margin-bottom: -2px;"> <tr>
+        <td width="447px">桥梁保护区域内施工</td>
+        <td><input type="text"  size="60px" name="qiaoliangbaohuquyuneishigong"></td>
+      </tr></table></td>
+    </tr>
+    <tr>
+      <td style="border: none;"><table border="1" width="900px" height="600px" style="border: 0;margin-bottom: -2px;"> <tr>
+        <td width="447px">其他危及行人、行船、行车安全的病害</td>
+        <td><input type="text"  size="60px" name="qitabinghai"></td>
+      </tr></table></td>
+    </tr>
+    <tr>
+      <td style="border: none;"><table border="1" width="900px" height="600px" style="border: 0;margin-bottom: -2px;"> <tr>
+        <td width="220px">巡查人</td>
+        <td width="222px"><input type="text"  size="28px" name="xuncharen"></td>
+        <td width="220px">巡查日期</td>
+        <td width="220px"><input type="text"  size="28px" name="xunchariqi"></td>
+      </tr></table></td>
+    </tr>
+    <style>
+      .td{width:50px height:60px;overflow:hidden}
+    </style>
+  </table>
+  <input type="submit" value="提交" style="margin-top: 50px;margin-left:300px">
+</form>
+</body>

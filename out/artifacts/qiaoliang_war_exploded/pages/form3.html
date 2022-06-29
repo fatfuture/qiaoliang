@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>表格页面</title>
+    <style>   
+    table.wTable th {
+	vertical-align:baseline;
+    }
+    table
+{
+    border-collapse:collapse;
+}
+table,th, td
+{
+    border: 1px solid black;
+    height:20px
+    
+}
+.fu>tr>td{
+    border: none;
+}
+</style>
+<script>
+    
+function addRow(){
+    var wTable = document.getElementById("wTable");
+    var tBodies = wTable.tBodies;
+    var tbody = tBodies[0];
+    var tr = tbody.insertRow(tbody.rows.length);
+    var td_1 = tr.insertCell(0);
+    td_1.innerHTML = "<div contenteditable='true' id=''></div>";
+    var td_2 = tr.insertCell(1);
+    td_2.innerHTML = "<div contenteditable='true' id=''></div>";
+	var td_3 = tr.insertCell(2);
+    td_3.innerHTML = "<div contenteditable='true' id=''></div>";
+    var td_4 = tr.insertCell(3);
+    td_4.innerHTML = "<div contenteditable='true' id=''></div>";
+    var td_5 = tr.insertCell(4);
+    td_5.innerHTML = "<div contenteditable='true' id=''></div>";
+    var td_6 = tr.insertCell(5);
+    td_6.innerHTML = "<div contenteditable='true' id=''></div>";
+    var td_7 = tr.insertCell(6);
+    td_7.innerHTML = "<div contenteditable='true' id=''></div>";
+    var td_8 = tr.insertCell(7);
+    td_8.innerHTML = "<div contenteditable='true' id=''></div>";
+    var td_9 = tr.insertCell(8);
+    td_9.innerHTML = "<div contenteditable='true' id=''></div>";
+    var td_10 = tr.insertCell(9);
+    td_10.innerHTML = "<div contenteditable='true' id=''></div>";
+    }
+    
+</script>
+
+
+ 
+</head>
+<body>
+    <form action="http://localhost:8080/qiaoliang/saveForm3Servlet" method="post"  style="text-align: center;margin-left: 249px;margin-top: 100px" >
+        <table border="1" class="wTable" id="wTable" width="900px" height="600px" style="border: 0;margin-bottom: -10px;" class="fu">
+            <p align="center">结构状态记录表</p>
+           <div style="margin-left: 5px;"> 桥梁名称: <input type="text" name="qiaoliangmingcheng" size="6px">
+            监测单位: <input type="text" name="jiancedanwei" size="6px">
+            日期: <input type="text" name="riqi" size="6px"></div>
+            <thead>
+<tr>
+    <th width="90">部件</th>
+    <th width="90">构件名称</th>
+    <th width="90">构件编号</th>
+    <th width="90">状态</th>
+    <th width="90">损坏类型</th>
+    <th width="90">损坏程度</th>
+    <th width="90">损坏位置</th>
+    <th width="90">侵蚀分类</th>
+    <th width="90">照片编号</th>
+    <th width="90">备注（包括损坏原因和可能退化速度）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+    <td width="147"><input contenteditable="true"  name="bujian"></td>
+    <td width="147"><input contenteditable="true"  name="goujianmingcheng"></td>
+    <td width="147"><input contenteditable="true"  name="goujianbianhao"></td>
+    <td width="147"><input contenteditable="true"  name="zhuangtai"></td>
+    <td width="147"><input contenteditable="true"  name="shunhuaileixing"></td>
+    <td width="147"><input contenteditable="true"  name="shunhuaichengdu"></td>
+    <td width="147"><input contenteditable="true"  name="shunhuaiweizhi"></td>
+    <td width="147"><input contenteditable="true"  name="qingshifenlei"></td>
+    <td width="147"><input contenteditable="true"  name="pupianbianhao"></td>
+    <td width="147"><input contenteditable="true"  name="beizhu"></td>
+</tr>
+<div>
+审定：<input type="text" name="shending" size="6px">
+复核：<input type="text" name="fuhe" size="6px">
+检测人员：<input type="text" name="jiancerenyuan" size="6px"></div>
+</tbody>
+        <style>
+            .td{width:50px height:60px;overflow:hidden}
+         </style>
+        </table>
+        <input type="button" onClick="addRow();" style="font-size:16px;" value="+"/>
+        <input type="submit" value="提交" style="margin-top: 50px;margin-left:300px">
+        </form>
+</body>

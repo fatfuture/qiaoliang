@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>表格页面</title>
+  <style>
+    table
+    {
+      border-collapse:collapse;
+    }
+    table,th, td
+    {
+      border: 1px solid black;
+      height:20px
+
+    }
+    input{
+      border: none;
+    }
+  </style>
+</head>
+<body>
+<form action="http://localhost:8080/qiaoliang/updateForm1Servlet" method="post" style="=text-align:center;margin-left:350px;">
+  <table border="1" width="700px" height="600px">
+    <p style="margin-left: 30%;">城市桥梁资料卡<p><br>
+    桥梁名称: <input type="text" name="qiaoliangmingcheng" size="6px">
+    所在路名: <input type="text" name="suozailuming" size="6px">
+    <tr>
+      <td  rowspan="26" width="10px" >一般资料</td>
+
+      <td width=90px>管理单位</td>
+      <td width="80"><input type="text"  size="10px" name="guanlidanwei"></div></td>
+      <td  rowspan="17" width="10px">上部结构</td>
+
+      <td width=100px>主梁形式</td>
+      <td width="80"><input type="text"  size="10px" name="zhuliangxingsi"></div></td>
+      <td rowspan="19" width="10px">下部结构</td>
+
+      <td rowspan="8" width="10px">桥墩</td>
+      <td width="90">形式</td>
+      <td width="80"><input type="text"  size="10px" name="xingsi1"></div></td>
+    </tr>
+    <tr>
+      <td>养护单位</td>
+      <td><input type="text"  size="10px" name="yanghudanwei"></div></td>
+      <td>主梁尺寸</td>
+      <td><input type="text"  size="10px" name="zuliangchichun"></div></td>
+      <td>桥墩数量</td>
+      <td><input type="text"  size="10px" name="qiaodunshuliang"></div></td>
+    </tr>
+    <tr>
+      <td>建设单位</td>
+      <td><input type="text"  size="10px" name="jiansedanwei"></div></td>
+      <td>主梁数量</td>
+      <td><input type="text"  size="10px" name="zuliangshuliang"></div></td>
+      <td>桥墩标高</td>
+      <td><input type="text"  size="10px" name="qiaodunbiaogao"></div></td>
+    </tr>
+    <tr>
+      <td>设计单位</td>
+      <td><input type="text"  size="10px" name="shejidanwei"></div></td>
+      <td>横梁形式</td>
+      <td><input type="text"  size="10px" name="hengliangxingsi"></div></td>
+      <td>盖梁尺寸</td>
+      <td><input type="text"  size="10px" name="gailiangcicun"></div></td>
+
+    </tr>
+    <tr>
+      <td>监理单位</td>
+      <td><input type="text"  size="10px" name="jianlidanwei"></div></td>
+      <td>主跨桥下净空</td>
+      <td><input type="text"  size="10px" name="zukuaqiaoxiajingkong"></div></td>
+      <td>基底标高</td>
+      <td><input type="text"  size="10px" name="jidibiaogao1"></div></td>
+    </tr>
+    <tr>
+      <td>施工单位</td>
+      <td><input type="text"  size="10px" name="shigongdanwei"></div></td>
+      <td>桥下限高</td>
+      <td><input type="text"  size="10px" name="qiaoxiaxiangao"></div></td>
+      <td>底板尺寸</td>
+      <td><input type="text"  size="10px" name="dibancicun"></div></td>
+
+    </tr>
+    <tr>
+      <td>建成年月</td>
+      <td><input type="text"  size="10px" name="jianchengnianyue"></div></td>
+      <td>拱桥矢跨比</td>
+      <td><input type="text"  size="10px" name="gongqiaosikuabi"></div></td>
+      <td>基桩尺寸</td>
+      <td><input type="text"  size="10px" name="jizhuangcichun1"></div></td>
+
+
+    </tr>
+    <tr>
+      <td>总造价</td>
+      <td><input type="text"  size="10px" name="zhongzhaojia"></div></td>
+      <td>支座形式</td>
+      <td><input type="text"  size="10px" name="jizhuoxingsi"></div></td>
+      <td>基桩根数</td>
+      <td><input type="text"  size="10px" name="jizhuanggengshu1"></div></td>
+    </tr>
+    <tr>
+      <td>养护类别</td>
+      <td><input type="text"  size="10px" name="yanghuleibie"></div></td>
+      <td>支座数量</td>
+      <td><input type="text"  size="10px" name="zhizuoshuliang"></div></td>
+      <td rowspan="11" width="10px">桥台</td>
+      <td>形式</td>
+      <td><input type="text"  size="10px" name="xingsi2"></div></td>
+    </tr>
+    <tr>
+      <td>养护等级</td>
+      <td><input type="text"  size="10px" name="yanghudengji"></div></td>
+      <td>桥面结构</td>
+      <td><input type="text"  size="10px" name="qiaomianjiegou"></div></td>
+      <td>桥台数量</td>
+      <td><input type="text"  size="10px" name="qiaotaishuliang"></div></td>
+
+    </tr>
+    <tr>
+      <td>道路等级</td>
+      <td><input type="text"  size="10px" name="daoludengji"></div></td>
+      <td>桥面铺装程度</td>
+      <td><input type="text"  size="10px" name="qiaomianpuzhunagchengdu"></div></td>
+      <td>桥台标高</td>
+      <td><input type="text"  size="10px" name="qiaotaibiaogao"></div></td>
+    </tr>
+    <tr>
+      <td>结构类型</td>
+      <td><input type="text"  size="10px" name="jiegouleixing"></div></td>
+      <td>伸缩缝型式</td>
+      <td><input type="text"  size="10px" name="shensuofongxingshi"></div></td>
+      <td>基底标高</td>
+      <td><input type="text"  size="10px" name="jidibiaogao2"></div></td>
+    </tr>
+    <tr>
+      <td>设计荷载</td>
+      <td><input type="text"  size="10px" name="sejihezai"></div></td>
+      <td>伸缩缝数量</td>
+      <td><input type="text"  size="10px" name="shensuofongshuliang"></div></td>
+      <td>台帽尺寸</td>
+      <td><input type="text"  size="10px" name="taimaocichun"></div></td>
+    </tr>
+    <tr>
+      <td>限载标准</td>
+      <td><input type="text"  size="10px" name="xianzhaibiaozun"></div></td>
+      <td>主桥纵坡</td>
+      <td><input type="text"  size="10px" name="zhuqiaozhongpo"></div></td>
+      <td>底板尺寸</td>
+      <td><input type="text"  size="10px" name="dibancichun"></div></td>
+    </tr>
+    <tr>
+      <td>抗震烈度</td>
+      <td><input type="text"  size="10px" name="kangzhengliedu"></div></td>
+      <td>主桥横坡</td>
+      <td><input type="text"  size="10px" name="zhuqiaohengpo"></div></td>
+      <td>基桩尺寸</td>
+      <td><input type="text"  size="10px" name="jizhuangcichun2"></div></td>
+    </tr>
+    <tr>
+      <td>正斜交角</td>
+      <td><input type="text"  size="10px" name="zhengxiejiaojiao"></div></td>
+      <td>引桥纵坡</td>
+      <td><input type="text"  size="10px" name="liqiaozhongpo"></div></td>
+      <td>基桩根数</td>
+      <td><input type="text"  size="10px" name="jizhuanggengshu1"></div></td>
+    </tr>
+    <tr>
+      <td>桥梁跨数</td>
+      <td><input type="text"  size="10px" name="qiaoliangkuashu"></div></td>
+      <td>引桥横坡</td>
+      <td><input type="text"  size="10px" name="yingqiaohengpo"></div></td>
+      <td>挡土板厚度</td>
+      <td><input type="text"  size="10px" name="dangtubanhoudu"></div></td>
+    </tr>
+    <tr>
+      <td>跨径组合</td>
+      <td><input type="text"  size="10px" name="kuajingzuhe"></div></td>
+      <td rowspan="9" width="10px">附属工程</td>
+      <td>集水口尺寸</td>
+      <td><input type="text"  size="10px" name="jishuikoucichun"></div></td>
+      <td>翼墙形式</td>
+      <td><input type="text"  size="10px" name="yiqiangxings"></div></td>
+    </tr>
+    <tr>
+      <td>桥面面积</td>
+      <td><input type="text"  size="10px" name="qiaomianmianji"></div></td>
+      <td>集水口数量</td>
+      <td><input type="text"  size="10px" name="jishuikoushuliang"></div></td>
+      <td>翼墙长度</td>
+      <td><input type="text"  size="10px" name="yiqiangchangdu"></div></td>
+    </tr>
+    <tr>
+      <td>桥梁总长</td>
+      <td><input type="text"  size="10px" name="qiaoliangzhongchang1"></div></td>
+      <td>泄水管尺寸</td>
+      <td><input type="text"  size="10px" name="xieshuiguancicun"></div></td>
+      <td rowspan="7" width="10px">附挂管线</td>
+      <td colspan="2">给水管</td>
+      <td><input type="text"  size="10px" name="fuguguanxian"></div></td>
+
+    </tr>
+    <tr>
+      <td>桥梁总宽</td>
+      <td><input type="text"  size="10px" name="qiaoliangzhongkuan"></div></td>
+      <td>泄水管长度</td>
+      <td><input type="text"  size="10px" name="xieshuichangdu"></div></td>
+
+      <td colspan="2">燃气管</td>
+      <td><input type="text"  size="10px" name="ranqiguan"></div></td>
+    </tr>
+    <tr>
+      <td>车行道净宽</td>
+      <td><input type="text"  size="10px" name="cehangdaojingkuan"></div></td>
+      <td>栏杆总长</td>
+      <td><input type="text"  size="10px" name="langanzhongchang"></div></td>
+      <td colspan="2">电力缆</td>
+      <td><input type="text"  size="10px" name="dainlilan"></div></td>
+    </tr>
+    <tr>
+      <td>人行道净宽</td>
+      <td><input type="text"  size="10px" name="renxingdaojingkuan"></div></td>
+      <td>栏杆结构</td>
+      <td><input type="text"  size="10px" name="langanjiegou"></div></td>
+      <td colspan="2">通信电缆</td>
+      <td><input type="text"  size="10px" name="tongxingdianlan"></div></td>
+    </tr>
+    <tr>
+      <td>河道等级</td>
+      <td><input type="text"  size="10px" name="hedaodengji"></div></td>
+      <td>端柱尺寸</td>
+      <td><input type="text"  size="10px" name="duanzhucichun"></div></td>
+      <td colspan="2"></td>
+      <td><input type="text"  size="10px" name=""></div></td>
+    </tr>
+    <tr>
+      <td>最高水位</td>
+      <td><input type="text"  size="10px" name="zuigaoshuiwei"></div></td>
+      <td>护岸类型</td>
+      <td><input type="text"  size="10px" name="huanleixing"></div></td>
+      <td colspan="2"></td>
+      <td><input type="text"  size="10px" name=""></div></td>
+    </tr>
+    <tr>
+      <td>常水位</td>
+      <td><input type="text"  size="10px" name="changshuiwei"></div></td>
+      <td>引坡挡墙类型</td>
+      <td><input type="text"  size="10px" name="yingpodangqiangleixing"></div></td>
+      <td colspan="2"></td>
+      <td><input type="text"  size="10px" name=""></div></td>
+    </tr>
+
+
+  </table>
+  <input type="submit" value="提交" style="margin-top: 50px;margin-left:300px">
+</form>
+</body>

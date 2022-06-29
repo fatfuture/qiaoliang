@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a, .dropbtn {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover, .dropdown:hover, .dropbtn {
+            background-color: #111;
+        }
+
+        .dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {background-color: #f1f1f1}
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<ul >
+    <li>
+        <div class="dropdown">
+            <a href="" class="dropbtn">桥梁资料卡</a>
+            <div class="dropdown-content">
+                <a href="mean1_1.html">建立(默认界面)</a>
+                <a href="mean1_2.html">查询</a>
+                <a href="mean1_3.html">删除</a>
+                <a href="mean1_4.html">更新</a>
+
+            </div>
+        </div></li>
+    <li>
+        <div class="dropdown">
+            <a href="" class="dropbtn">日常巡检</a>
+            <div class="dropdown-content">
+                <a href="mean2_1.html">登记</a>
+                <a href="mean2_2.html">查询</a>
+                <a href="mean2_3.html">删除</a>
+                <a href="mean2_4.html">更新</a>
+            </div>
+        </div></li>
+    <li>
+        <div class="dropdown">
+            <a href="" class="dropbtn">定期巡检</a>
+            <div class="dropdown-content">
+                <a href="mean3_1.html">登记</a>
+                <a href="mean3_2.html">查询</a>
+                <a href="mean3_3.html">删除</a>
+                <a href="mean3_4.html">更新</a>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="dropdown">
+            <a href="mean4.html" class="dropbtn">桥梁技术状况评估</a>
+            <div class="dropdown-content">
+                <a href="mean4_1.html">bci</a>
+                <a href="mean4_2.html">bsi</a>
+            </div>
+        </div>
+    </li>
+    <li class="right"><a href="#about">关于</a></li>
+</ul>
+
+<div style="padding:0 16px;">
+    <iframe width=100% height="700px" src="deleteForm1ByKey.html" name="iframe_a"></iframe>
+</div>
+
+</body>
+</html>

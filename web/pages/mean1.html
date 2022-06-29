@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+
+<style>
+    body {margin: 0;}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #4CAF50;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px){
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+}
+ul {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+.active {
+    background-color: #4CAF50;
+}
+</style>
+</head>
+<body>
+    
+<ul class="topnav">
+  <li><a class="active" href="#home">桥梁资料卡建立</a></li>
+  <li><a href="mean2.html" >日常巡检</a></li>
+  <li><a href="mean3.html">定期巡检</a></li>
+  <li class="right"><a href="#about">关于</a></li>
+</ul>
+
+<div style="padding:0 16px;">
+    <iframe width=100% height="700px" src="form1.html" name="iframe_a"></iframe>
+    <p><a href="form1.html" target="iframe_a">RUNOOB.COM</a></p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <servlet>
+        <servlet-name>BSICalculateServlet</servlet-name>
+        <servlet-class>web.BSICalculateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BSICalculateServlet</servlet-name>
+        <url-pattern>/bSICalculateServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>BCICalculateServlet</servlet-name>
+        <servlet-class>web.BCICalculateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BCICalculateServlet</servlet-name>
+        <url-pattern>/bCICalculateServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateForm2Servlet</servlet-name>
+        <servlet-class>web.UpdateForm2Servlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateForm2Servlet</servlet-name>
+        <url-pattern>/updateForm2Servlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteForm2ByKeyServlet</servlet-name>
+        <servlet-class>web.DeleteForm2ByKeyServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteForm2ByKeyServlet</servlet-name>
+        <url-pattern>/deleteForm2ByKeyServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>FindForm2ByKeyServlet</servlet-name>
+        <servlet-class>web.FindForm2ByKeyServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FindForm2ByKeyServlet</servlet-name>
+        <url-pattern>/findForm2ByKeyServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SaveForm2Servlet</servlet-name>
+        <servlet-class>web.SaveForm2Servlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SaveForm2Servlet</servlet-name>
+        <url-pattern>/saveForm2Servlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateForm3Servlet</servlet-name>
+        <servlet-class>web.UpdateForm3Servlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateForm3Servlet</servlet-name>
+        <url-pattern>/updateForm3Servlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteForm3ByKeyServlet</servlet-name>
+        <servlet-class>web.DeleteForm3ByKeyServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteForm3ByKeyServlet</servlet-name>
+        <url-pattern>/deleteForm3ByKeyServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateForm1Servlet</servlet-name>
+        <servlet-class>web.UpdateForm1Servlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateForm1Servlet</servlet-name>
+        <url-pattern>/updateForm1Servlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteForm1ByKeyServlet</servlet-name>
+        <servlet-class>web.DeleteForm1ByKeyServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteForm1ByKeyServlet</servlet-name>
+        <url-pattern>/deleteForm1ByKeyServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>FindForm1ByKeyServlet</servlet-name>
+        <servlet-class>web.FindForm1ByKeyServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FindForm1ByKeyServlet</servlet-name>
+        <url-pattern>/findForm1ByKeyServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>web.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/loginServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>FindForm3ByKeyServlet</servlet-name>
+        <servlet-class>web.FindForm3ByKeyServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FindForm3ByKeyServlet</servlet-name>
+        <url-pattern>/findForm3ByKeyServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SaveForm1Servlet</servlet-name>
+        <servlet-class>web.SaveForm1Servlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SaveForm1Servlet</servlet-name>
+        <url-pattern>/saveForm1Servlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SaveForm3Servlet</servlet-name>
+        <servlet-class>web.SaveForm3Servlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SaveForm3Servlet</servlet-name>
+        <url-pattern>/saveForm3Servlet</url-pattern>
+    </servlet-mapping>
+</web-app>

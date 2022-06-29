@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>表格页面</title>
+    <style>   
+    table
+{
+    border-collapse:collapse;
+}
+table,th, td
+{
+    border: 1px solid black;
+    height:20px
+    
+}
+
+</style>
+ 
+</head>
+<body>
+    <form action="" style="text-align:center;margin-left:350px;">
+	<table border="1" width="800px" height="600px">
+        <p align="center">城市桥梁资料卡<p><br>
+        桥梁名称: <input type="text" name="name" size="6px">
+        所在路名: <input type="text" name="name" size="6px">
+     <tr>
+        <td  rowspan="26" width="10px" >一般资料</td>
+       
+       <td width=90px>管理单位</td>
+       <td width="100"><div contenteditable="true" id=""></div></td>
+       <td  rowspan="17" width="10px">上部结构</td>
+       
+       <td width=100px>主梁形式</td>
+      <td width=100px><div contenteditable="true" id=""></div></td>
+       <td rowspan="19" width="10px">下部结构</td>
+      
+       <td rowspan="8" width="10px">桥墩</td>
+       <td width="90">形式</td>
+       <td width=100px><div contenteditable="true" id=""></div></td>
+     </tr>
+     <tr>        
+        <td>养护单位</td>       
+        <td><div contenteditable="true" id=""></div></td>
+        <td>主梁尺寸</td>
+        <td><div contenteditable="true" id=""></div></td>
+ 
+        <td>桥墩数量</td>
+        <td><div contenteditable="true" id=""></div></td>
+        
+        
+      
+    </tr>
+    <tr>     
+       <td>建设单位</td>
+       <td><div contenteditable="true" id=""></div></td>
+       <td>主梁数量</td>
+       <td><div contenteditable="true" id=""></div></td>
+       <td>桥墩标高</td>
+       <td><div contenteditable="true" id=""></div></td>
+    </tr>
+    <tr>
+       <td>设计单位</td>
+       <td><div contenteditable="true" id=""></div></td>
+       <td>横梁形式</td>
+       <td><div contenteditable="true" id=""></div></td>
+       <td>盖梁尺寸</td> 
+       <td><div contenteditable="true" id=""></div></td>
+       
+    </tr>
+    <tr> 
+        <td>监理单位</td>      
+        <td><div contenteditable="true" id=""></div></td>
+        <td>主跨桥下净空</td>
+        <td><div contenteditable="true" id=""></div></td>
+        <td>基底标高</td>
+        <td><div contenteditable="true" id=""></div></td>
+    </tr>
+    <tr>       
+        <td>施工单位</td>
+        <td><div contenteditable="true" id=""></div></td>
+        <td>桥下限高</td>
+        <td><div contenteditable="true" id=""></div></td>
+        <td>底板尺寸</td>
+        <td><div contenteditable="true" id=""></div></td>
+        
+    </tr>
+    <tr>
+        <td>建成年月</td>
+        <td><div contenteditable="true" id=""></div></td>  
+        <td>拱桥矢跨比</td>
+        <td><div contenteditable="true" id=""></div></td>     
+        <td>基桩尺寸</td>
+        <td><div contenteditable="true" id=""></div></td>
+       
+        
+    </tr>
+    <tr>
+        <td>总造价</td>
+        <td><div contenteditable="true" id=""></div></td>
+        <td>支座形式</td>
+        <td><div contenteditable="true" id=""></div></td>
+       <td>基桩根数</td>
+        <td><div contenteditable="true" id=""></div></td>
+    </tr>
+    <tr> 
+        <td>养护类别</td>      
+        <td><div contenteditable="true" id=""></div></td>
+        <td>支座数量</td>
+        <td><div contenteditable="true" id=""></div></td>
+        <td rowspan="11" width="10px">桥台</td>
+        <td>形式</td>
+        <td><div contenteditable="true" id=""></div></td>
+    </tr>
+    <tr> 
+        <td>养护等级</td>
+        <td><div contenteditable="true" id=""></div></td>
+        <td>桥面结构</td>
+        <td><div contenteditable="true" id=""></div></td>
+        <td>桥台数量</td>
+        <td><div contenteditable="true" id=""></div></td>
+        
+    </tr>
+    <tr>       
+        <td>道路等级</td>
+        <td><div contenteditable="true" id=""></div></td>
+        <td>桥面铺装程度</td>
+        <td><div contenteditable="true" id=""></div></td>
+      <td>桥台标高</td>
+        <td><div contenteditable="true" id=""></div></td>
+    </tr>
+    <tr>        
+        <td>结构类型</td>
+        <td><div contenteditable="true" id=""></div></td>
+        <td>伸缩缝型式</td>
+        <td><div contenteditable="true" id=""></div></td>
+        <td>基底标高</td>
+        <td><div contenteditable="true" id=""></div></td>
+    </tr>
+    <tr>      
+        <td>设计荷载</td>
+        <td><div contenteditable="true" id=""></div></td>
+        <td>伸缩缝数量</td>
+        <td><div contenteditable="true" id=""></div></td>
+        <td>台帽尺寸</td>
+        <td><div contenteditable="true" id=""></div></td>
+    </tr>
+    <tr> 
+        <td>限载标准</td>
+        <td><div contenteditable="true" id=""></div></td>
+        <td>主桥纵坡</td>
+        <td><div contenteditable="true" id=""></div></td>
+        <td>底板尺寸</td>
+        <td><div contenteditable="true" id=""></div></td>
+    </tr>
+    <tr>       
+        <td>抗震烈度</td>
+        <td><div contenteditable="true" id=""></div></td>
+        <td>主桥横坡</td>
+        <td><div contenteditable="true" id=""></div></td>
+        <td>基桩尺寸</td>
+        <td><div contenteditable="true" id=""></div></td>
+    </tr>
+    <tr>   
+        <td>正斜交角</td>
+        <td><div contenteditable="true" id=""></div></td>       
+        <td>引桥纵坡</td>
+        <td><div contenteditable="true" id=""></div></td>
+        <td>基桩根数</td>
+        <td><div contenteditable="true" id=""></div></td>
+    </tr>
+    <tr> 
+        <td>桥梁跨数</td>
+        <td><div contenteditable="true" id=""></div></td>
+        <td>引桥横坡</td>
+        <td><div contenteditable="true" id=""></div></td>
+        <td>挡土板厚度</td>
+        <td><div contenteditable="true" id=""></div></td>
+    </tr>
+    <tr> 
+        <td>跨径组合</td>
+        <td><div contenteditable="true" id=""></div></td>
+        <td rowspan="9" width="10px">附属工程</td>
+        <td>集水口尺寸</td>
+        <td><div contenteditable="true" id=""></div></td>
+        <td>翼墙形式</td>
+        <td><div contenteditable="true" id=""></div></td>
+    </tr>
+    <tr> 
+        <td>桥面面积</td>
+        <td><div contenteditable="true" id=""></div></td>
+        <td>集水口数量</td>
+        <td><div contenteditable="true" id=""></div></td>
+        <td>翼墙长度</td>
+        <td><div contenteditable="true" id=""></div></td>
+    </tr>
+    <tr> 
+        <td>桥梁总长</td>
+        <td><div contenteditable="true" id=""></div></td>
+        <td>泄水管尺寸</td>
+        <td><div contenteditable="true" id=""></div></td>
+        <td rowspan="7" width="10px">附挂管线</td>
+        <td colspan="2">给水管</td>
+        <td><div contenteditable="true" id=""></div></td>
+        
+    </tr>
+    <tr> 
+      
+        <td>桥梁总宽</td>
+        <td><div contenteditable="true" id=""></div></td>
+        <td>泄水管长度</td>
+        <td><div contenteditable="true" id=""></div></td>
+        
+        <td colspan="2">燃气管</td>
+        <td><div contenteditable="true" id=""></div></td>
+    </tr>
+    <tr> 
+      
+        <td>车行道净宽</td>
+        <td><div contenteditable="true" id=""></div></td>
+        <td>栏杆总长</td>
+        <td><div contenteditable="true" id=""></div></td>
+        <td colspan="2">电力缆</td>
+        <td><div contenteditable="true" id=""></div></td>
+       
+    </tr>
+    <tr> 
+      
+        <td>人行道净宽</td>
+        <td><div contenteditable="true" id=""></div></td>
+        <td>栏杆结构</td>
+        <td><div contenteditable="true" id=""></div></td>    
+        <td colspan="2">通信电缆</td>
+        <td><div contenteditable="true" id=""></div></td>
+    </tr>
+    <tr> 
+      
+        <td>河道等级</td>
+        <td><div contenteditable="true" id=""></div></td>
+        <td>端柱尺寸</td>        
+        <td><div contenteditable="true" id=""></div></td>
+        <td colspan="2"></td>
+        <td><div contenteditable="true" id=""></div></td>
+    </tr>
+    <tr> 
+      
+        <td>最高水位</td>
+        <td><div contenteditable="true" id=""></div></td>
+        <td>护岸类型</td>
+        <td><div contenteditable="true" id=""></div></td>
+        <td colspan="2"></td>
+        <td><div contenteditable="true" id=""></div></td>
+    </tr>
+    <tr> 
+      
+        <td>常水位</td>
+        <td><div contenteditable="true" id=""></div></td>
+        <td>引坡挡墙类型</td>
+        <td><div contenteditable="true" id=""></div></td>  
+        <td colspan="2"></td>
+        <td><div contenteditable="true" id=""></div></td>
+    </tr>
+
+    <style>
+        .td{width:50px height:60px;overflow:hidden}
+     </style>
+	</table>
+    <input type="submit" value="提交" style="margin-top: 50px;margin-left:300px">
+    </form>
+</body>
+</html>
